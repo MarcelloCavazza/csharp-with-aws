@@ -1,6 +1,10 @@
 ﻿using System;
 using message_publisher.models;
 
+Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
+
+
 var customerTest = new Customer()
 {
 	Id = Guid.NewGuid(),
